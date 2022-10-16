@@ -4,11 +4,11 @@ var swiper = new Swiper('.service-swiper', {
 	slidesPerView: 3,
 	spaceBetween: 30,
 	freeMode: false,
-	loop: true,
-	autoplay: {
-		delay: 5000,
-		disableOnInteraction: false,
-	},
+	// loop: true,
+	// autoplay: {
+	// 	delay: 5000,
+	// 	disableOnInteraction: false,
+	// },
 	// Responsive breakpoints
 	breakpoints: {
 		// when window width is >= 320px
