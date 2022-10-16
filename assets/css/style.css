@@ -308,6 +308,8 @@ footer strong {
 }
 
 /* media query */
+/* Mobile large */
+
 @media (max-width: 768px) {
 	.m-sections {
 		margin-top: 10px;
@@ -337,7 +339,7 @@ footer strong {
 		-moz-transform: translateY(30%);
 		-ms-transform: translateY(30%);
 		-o-transform: translateY(30%);
-}
+	}
 
 	.swiper-caption h3 span {
 		font-size: 45px;
@@ -355,37 +357,20 @@ footer strong {
 	.about-content {
 		position: relative;
 	}
-	.about-content .about-title {
-		position: absolute;
-		top: -380px;
-	}
-	.about-content .content {
-		margin-top: 40px;
-	}
-
-	.about .image {
-		width: 100%;
-		margin-top: 80px;
-	}
-	.about .image img {
-		width: 98%;
-		aspect-ratio: 2/1;
-	}
-	.about .image::after {
-		top: 10px;
-		right: -10px;
-	}
-
-	/* features */
-	.featrues {
-		margin-top: 80px;
-		padding: 20px 0;
-	}
 
 	/* services  */
 	.swiper-pointer-events {
-		padding: 10px;
+		padding: 20px;
 		margin-left: 0px;
 		margin-right: 0px;
+	}
+}
+
+@media (max-width: 428px) {
+	.service-box {
+		padding: 10px;
+	}
+	.service-box img {
+		height: 345px;
 	}
 }
