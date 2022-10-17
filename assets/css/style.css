@@ -89,9 +89,9 @@ ul {
 
 /* navbar style */
 .navbar {
-	background-color: rgba(255, 255, 255, 0.35);
-	backdrop-filter: blur(10px);
-	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+	background-color: rgba(255, 255, 255, 0.35) !important;
+	backdrop-filter: blur(10px) !important;
+	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37) !important;
 }
 
 .nav-link {
@@ -101,45 +101,8 @@ ul {
 }
 
 .nav-link.active,
-.nav-link:hover,
-.whatssapp-btn a {
+.nav-link:hover {
 	color: var(--main-color) !important;
-}
-.whatssapp-btn {
-	position: relative;
-	overflow: hidden;
-	font-weight: 400;
-	padding: 1px 20px;
-	border-radius: 5px;
-	margin-left: -100px;
-	margin-right: 250px;
-	border: 2px solid var(--main-color);
-	cursor: pointer;
-	transition: 0.3s;
-	-webkit-transition: 0.3s;
-	-moz-transition: 0.3s;
-	-ms-transition: 0.3s;
-	-o-transition: 0.3s;
-}
-
-.whatssapp-btn::before {
-	position: absolute;
-	content: '';
-	width: 0;
-	height: 300%;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%) rotate(45deg);
-	background: var(--main-color);
-	transition: 0.5s ease;
-	display: block;
-	z-index: -1;
-}
-.whatssapp-btn:hover a {
-	color: #fff !important;
-}
-.whatssapp-btn:hover::before {
-	width: 105%;
 }
 
 .navbar-brand {
@@ -311,22 +274,17 @@ footer strong {
 /* Mobile large */
 
 @media (max-width: 768px) {
+	.navbar {
+		position: relative;
+	}
 	.m-sections {
 		margin-top: 10px;
 	}
-	.navbar-collapse {
-		height: 100vh;
-	}
+
 	.navbar-nav {
-		padding: 100px 0 0 0;
+		padding: 50px 0 50px 0;
 	}
 
-	.whatssapp-btn {
-		width: 100%;
-		margin: 0;
-		text-align: center;
-		margin: 20px 0 0 0;
-	}
 	/* hero style */
 	.hero-section {
 		animation: none;

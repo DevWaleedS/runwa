@@ -31,3 +31,22 @@ var swiper = new Swiper('.service-swiper', {
 
 // Initialize the AOS
 AOS.init();
+
+
+/** toggle navbar when clicked navLinks */
+
+
+// nav links toggles
+let navLinks = document.querySelectorAll('.nav-link');
+let navBar = document.querySelector('#navbarNav');
+
+
+// 
+navLinks.forEach((navLink) => {
+	navLink.addEventListener('click', () => {
+		navBar.classList.toggle('show')
+	})
+})
+
+
+
