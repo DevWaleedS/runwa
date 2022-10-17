@@ -264,10 +264,25 @@ footer {
 	color: #fff;
 	font-weight: 300;
 }
+.copyRight {
+	text-align: center !important;
+	font-size: 14px;
+	display: inherit;
+	padding: 0;
+	margin-bottom: -40px;
+}
 footer strong {
 	color: var(--main-color);
 	font-size: 20px;
 	font-weight: 500;
+}
+.waleed {
+	font-size: 10px;
+	color: var(--bs-gray-600);
+	margin-right: 10px;
+}
+.waleed a {
+	color: var(--second-color);
 }
 
 /* media query */
